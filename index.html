@@ -7,79 +7,207 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Insure landing page</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
 
-  How we work
-  Blog
-  Account
-  View plans
+  <nav>
 
-  Humanizing your insurance.
+    <div class="container">
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
+      <div class="flex">
+        <div>
+          <img src="./images/logo.svg" alt="logo">
+        </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <ul>
+          <li><a href="#">How We work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a class="button button-nav" href="#">View Plans</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <header>
+
+    <div class="container">
+
+      <div class="flex align-start">
+        <!-- left div -->
+        <div>
+          <h1 class="line-top">
+            Humanizing your insurance.
+          </h1>
+          <p>
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.
+          </p>
+          <button class="button">
+            View plans
+          </button>
+        </div>
+
+        <!-- Right div -->
+        <div>
+          <img src="./images/image-intro-desktop.jpg" alt="image-intro-desktop" class="ivan">
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="container">
+
+    <h2 class="line-top line-violet">
+      We’re different
+    </h2>
+
+    <!-- contains three columns -->
+    <div class="flex">
+      <!-- column 1 -->
+      <div class="features">
+        <img src="./images/icon-snappy-process.svg" alt="snappy">
+        <h3>
+          Snappy Process
+        </h3>
+        <p>
+          Our application process can be completed in minutes, not hours. Don’t get 
+          stuck filling in tedious forms.
+        </p>
+      </div>
+
+      <!-- column 2 -->
+      <div class="features">
+        <img src="./images/icon-affordable-prices.svg" alt="icon-affordable-prices">
+        <h3>
+          Affordable Prices
+        </h3>
+        <p>
+          We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.
+        </p>
+      </div>
+
+      <!-- column 3 -->
+      <div class="features">
+        <img src="./images/icon-people-first.svg " alt="icon-people-first">
+        <h3>
+          People First
+        </h3>
+        <p>
+          Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="container bg-violet">
+
+    <div class="flex">
+      <div>
+        <h2>
+          Find out more about how we work
+        </h2>
+      </div>
+
+      <button class="button">
+        How we work
+      </button>
+      
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <div class ="container">
+      
+      <!-- first row -->
+      <div class="flex border-bottom">
+
+        <!-- left side -->
+        <div>
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+      
+
+        <!-- right side -->
+        <ul class="flex">
+          <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a></li>
+          <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a></li>
+          <li><a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"></a></li>
+          <li><a href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a></li>
+        </ul>
+      </div>
+      <!-- second row -->
+      <div class="flex align-start">
+
+        <!-- first column -->
+        <div>
+          <h4>
+            Our company
+          </h4>
+          <ul>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Why Insure?</a></li>
+            <li><a href="#">View plans</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- second column -->
+        <div>
+          <h4>
+            Help me
+          </h4>
+          <ul>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+
+        <!-- third column -->
+        <div>
+          <h4>
+            Contact
+          </h4>
+          <ul>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Live chat</a></li>
+          </ul>
+        </div>
+
+        <!-- fourth column -->
+        <div>
+          <h4>
+            Others
+          </h4>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </footer>
 </body>
 </html>
