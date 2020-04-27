@@ -41,6 +41,7 @@ h3 {
 }
 
 p {
+  line-height: 1.7;
   opacity: 0.8;
 }
 
@@ -61,6 +62,7 @@ p {
 .button {
   border: 2px solid white;
   background-color: transparent;
+  display: inline-block;
   color: white;
   cursor: pointer;
   padding: 15px 25px;
@@ -97,6 +99,14 @@ p {
 }
 
 /* NAV STYLING */
+nav {
+  padding: 20px 0;
+}
+
+nav .hamburger {
+  display: none;
+}
+
 
 nav ul {
   display: flex;
@@ -155,6 +165,7 @@ header::before {
 
 .ivan {
   margin-bottom: -250px;
+  max-width: 100%;
 }
 
 /* SECTION STYLING */
@@ -217,4 +228,89 @@ footer li a {
 .border-bottom {
   border-bottom: 1px solid var(--grayish-blue);
   margin-bottom: 30px;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  
+  .flex {
+    flex-direction: column;
+  }
+
+  nav .hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+  }
+
+  nav .flex {
+    flex-direction: row;
+  }
+
+  nav .img-wrapper {
+    text-align: left;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  header::before,
+  header::after {
+    display: none;
+  }
+
+  .ivan {
+    display: inline-block;
+    margin-left: -20px;
+    margin-bottom: -10px;
+    max-width: calc(100% + 40px);
+  }
+
+  .line-top::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .bg-violet {
+    background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+
+
+  }
+
+  .bg-violet h2 {
+    margin-bottom: 20px;
+    width: 100%;
+
+  }
+
+  footer {
+    background-image: url('./images/bg-pattern-footer-mobile.svg');
+    background-size: 100% auto;
+    background-position: top center;
+  }
+
+  footer ul.flex {
+    flex-direction: row;
+  }
+
+  footer .flex div {
+    width: 100%;
+  }
+
 }
